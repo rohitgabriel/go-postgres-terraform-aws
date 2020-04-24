@@ -7,9 +7,11 @@ Assumes that the artifacts are available in a S3 bucket for deployment. The CI p
 
 ## Usage
 Populate the vars.tf file or pass variables like below:<br/>
+```
 terraform init<br/>
 terraform plan -var="AWS_ACCESS_KEY_ID=AWS access key" -var="AWS_SECRET_ACCESS_KEY=aws secret key" -var="AWS_REGION=aws region" -var="db_password=Password more than 8 chars" <br/>
 terraform apply -var="AWS_ACCESS_KEY_ID=AWS access key" -var="AWS_SECRET_ACCESS_KEY=aws secret key" -var="AWS_REGION=aws region" -var="db_password=Password more than 8 chars" <br/>
+```
 
 ## Deployment Design
 Creates VPC and Subnets<br/>
